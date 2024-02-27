@@ -1,3 +1,3 @@
 export function getHost() {
-  return 'https://travelogo-services.onrender.com';
+  return 'https://agado-backend.pages.dev';
 }

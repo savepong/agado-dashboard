@@ -19,7 +19,7 @@ import { getHost } from './services/hostService';
 function App() {
   const [sixMonthsTurnupRatioData, setSixMonthsTurnupRatioData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/sixMonthsTurnupRatioData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/sixMonthsTurnupRatioData.json`, {}).then((response) => {
       const data = response.data;
       setSixMonthsTurnupRatioData(data);
     });
@@ -28,7 +28,7 @@ function App() {
   const [oneYearTurnupRatioData, setOneYearTurnupRatioData] = useState({});
 
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/oneYearTurnupRatioData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/oneYearTurnupRatioData.json`, {}).then((response) => {
       const data = response.data;
       setOneYearTurnupRatioData(data);
     });
@@ -36,7 +36,7 @@ function App() {
 
   const [twoYearsTurnupRatioData, setTwoYearsTurnupRatioData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/twoYearsTurnupRatioData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/twoYearsTurnupRatioData.json`, {}).then((response) => {
       const data = response.data;
       setTwoYearsTurnupRatioData(data);
     });
@@ -45,7 +45,7 @@ function App() {
   const [seasonalIncome, setSeasonalIncome] = useState({});
   const [seasonalIncomeOneYear, setSeasonalIncomeOneYear] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/oneYearSeasonalIncomeData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/oneYearSeasonalIncomeData.json`, {}).then((response) => {
       const data = response.data;
       setSeasonalIncome(data);
       setSeasonalIncomeOneYear(data);
@@ -54,7 +54,7 @@ function App() {
 
   const [seasonalIncomeThreeYears, setSeasonalIncomeThreeYears] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/threeYearsSeasonalIncomeData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/threeYearsSeasonalIncomeData.json`, {}).then((response) => {
       const data = response.data;
       setSeasonalIncomeThreeYears(data);
     });
@@ -62,7 +62,7 @@ function App() {
 
   const [guestPerCountry, setGuestPerCountry] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/oneYearGuestPerCountryData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/oneYearGuestPerCountryData.json`, {}).then((response) => {
       const data = response.data;
       setGuestPerCountry(data);
     });
@@ -70,7 +70,7 @@ function App() {
 
   const [sixMonthsGuestPerCountryData, setSixMonthsGuestPerCountryData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/sixMonthsGuestPerCountryData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/sixMonthsGuestPerCountryData.json`, {}).then((response) => {
       const data = response.data;
       setSixMonthsGuestPerCountryData(data);
     });
@@ -78,7 +78,7 @@ function App() {
 
   const [oneYearGuestPerCountryData, setOneYearGuestPerCountryData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/oneYearGuestPerCountryData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/oneYearGuestPerCountryData.json`, {}).then((response) => {
       const data = response.data;
       setOneYearGuestPerCountryData(data);
     });
@@ -86,7 +86,7 @@ function App() {
 
   const [twoYearsGuestPerCountryData, setTwoYearsGuestPerCountryData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/twoYearsGuestPerCountryData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/twoYearsGuestPerCountryData.json`, {}).then((response) => {
       const data = response.data;
       setTwoYearsGuestPerCountryData(data);
     });
@@ -94,7 +94,7 @@ function App() {
 
   const [roomTypesData, setRoomTypesData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/roomTypesData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/roomTypesData.json`, {}).then((response) => {
       const data = response.data;
       setRoomTypesData(data);
     });
@@ -102,7 +102,7 @@ function App() {
 
   const [stayingLengthData, setStayingLengthData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/stayingLengthData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/stayingLengthData.json`, {}).then((response) => {
       const data = response.data;
       setStayingLengthData(data);
     });
@@ -110,7 +110,7 @@ function App() {
 
   const [visitPurposeData, setVisitPurposeData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/visitPurposeData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/visitPurposeData.json`, {}).then((response) => {
       const data = response.data;
       setVisitPurposeData(data);
     });
@@ -118,7 +118,7 @@ function App() {
 
   const [visitorTypeData, setVisitorTypeData] = useState({});
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/visitorTypeData`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/visitorTypeData.json`, {}).then((response) => {
       const data = response.data;
       setVisitorTypeData(data);
     });
@@ -126,7 +126,7 @@ function App() {
 
   const [bookings, setBookings] = useState([]);
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/booking`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/booking.json`, {}).then((response) => {
       const data = response.data.bookings;
       setBookings(data);
     });
@@ -134,7 +134,7 @@ function App() {
 
   const [guests, setGuests] = useState([]);
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/guest`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/guest.json`, {}).then((response) => {
       const data = response.data.guests;
       setGuests(data);
     });
@@ -142,7 +142,7 @@ function App() {
 
   const [transactions, setTransactions] = useState([]);
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/transaction`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/transaction.json`, {}).then((response) => {
       const data = response.data.transactions;
       setTransactions(data);
     });
@@ -151,7 +151,7 @@ function App() {
   const [reviews, setReviews] = useState([]);
   const [averageRating, setAverageRating] = useState(0);
   useEffect(() => {
-    axios.get(`${getHost()}/api/v1/review`, {}).then((response) => {
+    axios.get(`${getHost()}/api/v1/review.json`, {}).then((response) => {
       const reviews = response.data.reviews;
       const totalScore = reviews
         .map((review) => parseInt(review.score))
@@ -239,7 +239,7 @@ function App() {
       <Header className='flex-none mb-4 font-bold text-sm h-9'>
         <div className='flex justify-between items-center'>
           <div className='flex justify-between items-center'>
-            <Icon className='mr-2' icon='home'></Icon> Silom Bangkok Hotel - Powered By TRAVELOGO v
+            <Icon className='mr-2' icon='home'></Icon> Silom Bangkok Hotel - Powered By agado v
             {packageJson.version}
           </div>
           <ThemeSwitcher></ThemeSwitcher>

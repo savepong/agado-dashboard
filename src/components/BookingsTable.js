@@ -91,7 +91,7 @@ export const BookingsTable = ({ bookings }) => {
                     <td className='px-6 py-4 text-sm font-medium whitespace-nowrap'>
                       #{booking_id}
                     </td>
-                    <td className='px-6 py-4 text-sm font-medium whitespace-nowrap capitalize text-gray-100'>
+                    <td className='px-6 py-4 text-sm font-medium whitespace-nowrap capitalize'>
                       <h3>{guest_name}</h3>
                       <div className='flex gap-2'>
                         <Flag className='mr-2' flag={origin_country.toLowerCase()}></Flag>

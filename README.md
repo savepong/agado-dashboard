@@ -1,6 +1,6 @@
-## About
+## Agado dashboard
 
-This is the frontend project for Travelogo dashboard
+This is the frontend project for students in the React basic course.
 
 <img src="./assets/akado-dashboard-wireframe.png" alt="Akado dashboard wirefram" width="1200"/>
 
