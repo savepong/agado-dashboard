@@ -7,7 +7,6 @@ import BarChart from './components/BarChart';
 import LineChart from './components/LineChart';
 import PieChart from './components/PieChart';
 import Header from './components/Header';
-import SparkLineChart from './components/SparkLineChart';
 import ButtonBar from './components/ButtonBar';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import BookingsTable from './components/BookingsTable';
@@ -179,7 +178,7 @@ function App() {
       );
     });
     setBookings([...rows]);
-  }, [guests, transactions, reviews]);
+  }, [guests, transactions, reviews, bookings]);
 
   const getOneYearIncome = () => {
     return Object.keys(seasonalIncome).length ? seasonalIncome.datasets[0]?.data || [] : [];
@@ -289,11 +288,6 @@ function App() {
               <h1 className='text-xl'>Average Monthly $</h1>
               <h1 className='text-4xl'>${getAverageMonthly()}</h1>
             </div>
-            <SparkLineChart
-              className='w-full h-44 pt-6'
-              data={getOneYearIncome()}
-              referenceValue={10000}
-            ></SparkLineChart>
           </div>
           <div className='flex flex-col grow items-center justify-center'>
             <div>

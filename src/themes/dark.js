@@ -7,5 +7,4 @@ import '@refinitiv-ui/elements/panel/themes/halo/dark';
 import '@refinitiv-ui/elements/pill/themes/halo/dark';
 import '@refinitiv-ui/elements/rating/themes/halo/dark';
 import '@refinitiv-ui/elements/select/themes/halo/dark';
-import '@refinitiv-ui/elements/sparkline/themes/halo/dark';
 import '@refinitiv-ui/elements/toggle/themes/halo/dark';

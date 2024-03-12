@@ -7,5 +7,4 @@ import '@refinitiv-ui/elements/panel/themes/halo/light';
 import '@refinitiv-ui/elements/pill/themes/halo/light';
 import '@refinitiv-ui/elements/rating/themes/halo/light';
 import '@refinitiv-ui/elements/select/themes/halo/light';
-import '@refinitiv-ui/elements/sparkline/themes/halo/light';
 import '@refinitiv-ui/elements/toggle/themes/halo/light';
